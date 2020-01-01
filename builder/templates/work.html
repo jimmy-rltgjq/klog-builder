@@ -1,0 +1,14 @@
+{% include 'header.html' %}
+{% with me=me %}
+    {% include "me.html" %}
+{% endwith %}
+
+<div class="container">
+    <article class="markdown-body">
+        {% set template = md_path %} {% include template %}
+    </article>
+
+</div>
+
+
+{% include 'footer.html' %}

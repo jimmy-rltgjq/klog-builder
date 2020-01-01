@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+{% with me=me %}
+    {% include "me.html" %}
+{% endwith %}
+
+<div class="container">
+    <div class="works-section">
+        {% for work in works %}
+        <a class="work" href="/works/{{work[0]}}.html">
+            <img src="/common/img/{{work[2]}}" alt="{{work[1]}}">
+            <span class="title">{{work[1]}}</span>
+            <br>
+        </a>
+        {% endfor %}
+    </div>
+
+</div>
+
+
+{% include 'footer.html' %}

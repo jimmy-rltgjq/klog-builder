@@ -1,0 +1,25 @@
+{% include 'header.html' %}
+{% with me=me %}
+    {% include "me.html" %}
+{% endwith %}
+
+<div class="container">
+    <div class="articles-section">
+        {% for article in articles %}
+        <div class="article">
+            <a href="/articles/{{article[5]}}.html">
+                <span class="icon">{{article[0]}}</span>
+                <span class="title">{{article[1]}}</span>
+                <span class="sub_title">{{article[2]}}</span>
+                <span class="date">{{article[3]}}</span>
+            </a>
+            <p class="hashtag">
+                <span>{{article[4]}}</span>
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% include 'footer.html' %}

@@ -1,0 +1,88 @@
+{% include 'header.html' %}
+{% with me=me %}
+    {% include "me.html" %}
+{% endwith %}
+
+<!--About-->
+<div class="container">
+    <!--  Intro Section  -->
+    <div class="intro about-section">
+        <span>"{{ about['INTRO'] }}"</span>
+    </div>
+
+    <!--  Contact Section  -->
+    <div class="contact about-section">
+        <div class="about-content">
+            <a href="mailto:{{about['contact']['EMAIL']}}">{{about['contact']['EMAIL']}}</a>
+            <span>/</span>
+            <a href="{{about['contact']['INSTAGRAM']}}">Instagram</a>
+            <span>/</span>
+            <a href="{{about['contact']['GITHUB']}}">GitHub</a>
+        </div>
+        <div class="about-content">
+            <a href="{{about['contact']['RESUME']}}">Resume</a>
+            <span>/</span>
+            <a href="{{about['contact']['LINKEDIN']}}">LinkedIn</a>
+            <span>/</span>
+            <a href="{{about['contact']['ROCKETPUNCH']}}">RocketPunch</a>
+        </div>
+    </div>
+
+    <!--  Career Section  -->
+    <div class="career about-section">
+        <p class="section-title">Career</p>
+        {% for dict_item in about['career'] %}
+         <div class="about-content">
+            <b>{{dict_item['name']}}</b>
+            <span>{{dict_item['position']}}</span>
+            <span>({{dict_item['start_date']}} ~ {{dict_item['end_date']}})</span>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!--  Skils Section  -->
+    <div class="skils about-section">
+        <p class="section-title">Skils</p>
+        {% for skill_list in about['skils'] %}
+         <div class="about-content">
+            {% for skill in skill_list %}
+                <a href="#">{{skill}}</a>
+             {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <!--  Following Section  -->
+    <div class="following about-section">
+        <p class="section-title">Following</p>
+        {% for following_list in about['following'] %}
+         <div class="about-content">
+            {% for follow in following_list %}
+                <a href="#">{{follow}}</a>
+             {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <!--  Awards Section  -->
+    <div class="awards about-section">
+        <p class="section-title">Awards</p>
+        <div class="about-content">
+        {% for award in about['awards'] %}
+            <p>🏆 {{award}}</p>
+        {% endfor %}
+        </div>
+    </div>
+
+     <!--  Papers Section  -->
+    <div class="papers about-section">
+        <p class="section-title">Papers</p>
+        <div class="about-content">
+        {% for paper in about['papers'] %}
+            <p>📄 {{paper}}</p>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}
