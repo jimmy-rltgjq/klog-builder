@@ -1,6 +1,6 @@
 import os
 
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, select_autoescape, FileSystemLoader
 from utils.DataHelper import get_yml_data
 
 
@@ -17,7 +17,7 @@ class Template:
 
         # Init JinJa Environment
         self.env = Environment(
-            loader=PackageLoader('builder', '/templates'),
+            loader=FileSystemLoader('%s/templates/' % os.path.dirname(__file__)),
             autoescape=select_autoescape(['html', 'xml'])
         )
 
