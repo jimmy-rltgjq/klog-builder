@@ -10,8 +10,9 @@ pip install -r requirements.txt
 
 When installed, you can invoke Klog Builder from the command-line:
 ```shell
-python ./builder [KLOG_FOLDER_PATH]
+python ./builder ./docs/sample_klog
 ```
+
 
 
 

@@ -1,12 +1,12 @@
 about:
   INTRO:
   contact:
-    EMAIL:
-    INSTAGRAM:
-    GITHUB:
-    RESUME:
-    LINKEDIN:
-    ROCKETPUNCH:
+    EMAIL: klog@gmail.com
+    INSTAGRAM: https://www.instagram.com/klog
+    GITHUB: https://github.com/jjjjjimmy
+    RESUME: https://www.rocketpunch.com/@klog
+    LINKEDIN: https://www.linkedin.com/klog
+    ROCKETPUNCH: https://www.rocketpunch.com/@klog
   career: [
     { name: '', position: '', start_date: '', end_date: ''},
     { name: '', position: '', start_date: '', end_date: ''},
