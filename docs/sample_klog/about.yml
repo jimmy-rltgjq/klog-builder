@@ -1,0 +1,34 @@
+about:
+  INTRO:
+  contact:
+    EMAIL:
+    INSTAGRAM:
+    GITHUB:
+    RESUME:
+    LINKEDIN:
+    ROCKETPUNCH:
+  career: [
+    { name: '', position: '', start_date: '', end_date: ''},
+    { name: '', position: '', start_date: '', end_date: ''},
+  ]
+  skils: [
+    ['NodeJS', 'Python', 'Java', 'Scala'],
+    ['PHP', 'Spring', 'Vue.js', 'MySQL'],
+    ['REST API', 'Docker', 'Git', 'Spark'],
+    ['Hadoop', 'HDP', 'Javascript', 'HTML/CSS'],
+    ['NoSQL', 'Flask', 'Laravel', 'Kafka'],
+    ['MongoDB']
+  ]
+  following: [
+    ['Elastic Stack', 'JetBrain', 'InFLearn', 'VS Code'],
+    ['Kotlin', 'NodeJS', 'HBase', 'TDD'],
+    ['Notion.so', 'Evernote', 'Slack', 'MacOS'],
+    ['FFmpeg', 'RED5', 'ROS']
+  ]
+  awards: [
+    '2018 ABCD EFG',
+    '2017 ABCD EFG'
+  ]
+  papers: [
+    ''
+  ]
